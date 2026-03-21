@@ -13,9 +13,9 @@ func main(){
 	fmt.Printf("MEDIA = %.2f\n", media)
 
 	if media >= 6 {
-		fmt.Println("APROVADO")
+		fmt.Println("APROVADO\n")
 	} else {
-	fmt.Println("REPROVADO")
+	fmt.Println("REPROVADO\n")
 	}
 	
 }
