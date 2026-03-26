@@ -6,9 +6,9 @@ Esta pasta contém as resoluções da **Lista 01** de exercícios utilizando a l
 
 Cada arquivo representa uma questão:
 
-* "q01.go" → Questão 01
-* "q02.go" → Questão 02
-* "q03.go" → Questão 03
+* "Q01.go" → Questão 01
+* "Q02.go" → Questão 02
+* "Q03.go" → Questão 03
 * ...
 
 🎯 Objetivo
