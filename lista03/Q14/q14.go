@@ -3,12 +3,16 @@ package main
 import "fmt"
 
 func primo(A int) bool {
-	for d := 2; d < A; d++ {
+	if A < 2 {
+		return false
+	}
+	
+	for d := 2; d*d <= A; d++ {
 		if A % d == 0 {
 			 return false
 		}
-
 	}
+
 	return true
 }
 

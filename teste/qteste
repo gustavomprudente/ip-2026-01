@@ -1,0 +1,31 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		num    [10]int
+		sup    []int
+		pos    int
+		posSup []int
+	)
+
+	for pos = 0; pos < 10; pos++ {
+		fmt.Printf("Digite o %d° número: ", pos)
+		fmt.Scan(&num[pos])
+		fmt.Println()
+		if num[pos] > 50 {
+			sup = append(sup, num[pos])
+			posSup = append(posSup, pos)
+		}
+	}
+
+	if len(sup) == 0 {
+		fmt.Println("Não há nenhum número superior a 50.")
+		return
+	}
+
+	for i := 0; i < 10; i++ {
+		fmt.Printf("")
+	}
+}
