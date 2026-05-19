@@ -1,9 +1,3 @@
-# 🏥 Hospital Teste — Sistema de Gestão de Pacientes
-
-Este projeto é um servidor HTTP completo desenvolvido em **GoLang** integrado a um banco de dados **PostgreSQL** para o gerenciamento (CRUD) de pacientes de um hospital. A interface web é limpa, responsiva, minimalista e interativa, servida diretamente como arquivos estáticos (HTML/CSS).
-
----
-
 ## 🛠️ Pré-requisitos
 
 Para rodar este projeto em sua máquina local, você precisará ter instalado:
