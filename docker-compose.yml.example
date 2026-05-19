@@ -1,0 +1,15 @@
+version: '3.8' # Define a versão da especificação do Docker Compose
+services: # Inicia o bloco de definição dos serviços (containers)
+  db: # Define um serviço chamado "db" para o banco de dados
+    image: postgres:16 # Utiliza a imagem oficial do PostgreSQL na versão 16
+    container_name: hospital_teste_db # Define o nome fixo do container como "hospital_teste_db"
+    environment: # Inicia o bloco de variáveis de ambiente do container
+      POSTGRES_USER: postgres # Define o usuário administrador inicial do banco de dados
+      POSTGRES_PASSWORD: postgres # Define a senha do usuário administrador inicial
+      POSTGRES_DB: hospital_teste # Define o nome do banco de dados a ser criado na inicialização
+    ports: # Inicia o bloco de mapeamento de portas de rede
+      - "5432:5432" # Mapeia a porta 5432 da máquina host para a porta 5432 do container
+    volumes: # Inicia o bloco de mapeamento de volumes (armazenamento persistente)
+      - pgdata:/var/lib/postgresql/data # Mapeia o volume nomeado "pgdata" para o diretório de dados interno do PostgreSQL
+volumes: # Inicia a declaração de volumes nomeados gerenciados pelo Docker
+  pgdata: # Declara o volume "pgdata" para persistir os dados mesmo se o container for deletado

@@ -1,0 +1,131 @@
+* { /* Seletor universal para reiniciar estilos padrões */
+    margin: 0; /* Remove margens externas padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos internos padrão de todos os elementos */
+    box-sizing: border-box; /* Define o cálculo do tamanho com base na borda */
+} /* Fecha o seletor universal */
+
+body { /* Estilização global do corpo da página */
+    font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif; /* Define a fonte padrão com alternativas de sistema */
+    background-color: #f5f5f5; /* Cor de fundo cinza bem clara conforme paleta */
+    color: #1a1a1a; /* Cor padrão do texto principal quase preto */
+    display: flex; /* Utiliza layout flexbox para posicionar os elementos principais */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo principal */
+    align-items: center; /* Centraliza verticalmente o conteúdo na viewport */
+    min-height: 100vh; /* Define a altura mínima do corpo para preencher toda a tela */
+    padding: 20px; /* Preenchimento nas bordas da página para telas pequenas */
+} /* Fecha estilos do body */
+
+.form-container { /* Bloco que limita a largura do formulário centralizado */
+    width: 100%; /* Permite ocupar a largura máxima disponível */
+    max-width: 480px; /* Limita a largura máxima do formulário a 480px conforme regras */
+    background-color: #ffffff; /* Fundo totalmente branco para destacar sobre o fundo cinza */
+    border: 1px solid #e0e0e0; /* Borda bem sutil e suave cinza claro */
+    border-radius: 12px; /* Bordas arredondadas modernas e elegantes */
+    padding: 40px 30px; /* Preenchimento interno generoso no formulário */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Aplica sombra sutil ao redor do card */
+} /* Fecha estilos da classe form-container */
+
+.back-link { /* Estilização do link de voltar para home */
+    display: inline-block; /* Define display block inline para permitir espaçamento */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: #666666; /* Cor cinza neutro e sutil para o link */
+    font-size: 0.9rem; /* Fonte ligeiramente reduzida para manter discrição */
+    font-weight: 500; /* Peso de fonte semi-médio */
+    margin-bottom: 24px; /* Espaço vertical abaixo do link para afastar o título */
+    transition: color 0.2s ease; /* Transição suave de mudança de cor */
+} /* Fecha estilos da classe back-link */
+
+.back-link:hover { /* Estilo do link de voltar ao passar o mouse */
+    color: #2a7ae2; /* Muda a cor para o azul de destaque oficial */
+} /* Fecha hover do back-link */
+
+h2 { /* Estilização do título principal do formulário */
+    font-size: 1.6rem; /* Tamanho confortável para destaque de formulários */
+    font-weight: 700; /* Título bem marcado em negrito */
+    color: #1a1a1a; /* Cor padrão escura da paleta */
+    margin-bottom: 8px; /* Espaço vertical abaixo do título */
+} /* Fecha estilos do título h2 */
+
+.form-subtitle { /* Estilização do subtítulo informativo */
+    font-size: 0.9rem; /* Fonte pequena */
+    color: #666666; /* Cor cinza suave discreta */
+    margin-bottom: 24px; /* Espaço abaixo do subtítulo */
+} /* Fecha estilos do subtitle */
+
+.form-group { /* Agrupador estrutural de rótulo e input */
+    margin-bottom: 20px; /* Espaço vertical que separa as linhas de formulário */
+    display: flex; /* Permite organizar filhos verticalmente com facilidade */
+    flex-direction: column; /* Alinha o rótulo acima do campo digitável */
+    gap: 8px; /* Espaçamento de 8px entre a label e o input correspondente */
+} /* Termina estilos da classe form-group */
+
+.form-group label { /* Estilização do rótulo do campo */
+    font-size: 0.9rem; /* Tamanho ideal e legível */
+    font-weight: 600; /* Peso semi-negrito para rápida identificação visual */
+    color: #333333; /* Cor escura levemente atenuada */
+} /* Termina estilos do label */
+
+.form-group input, /* Estilo geral para inputs de texto, email, data e telefone */
+.form-group textarea { /* Estilo para o campo de texto de diagnóstico */
+    width: 100%; /* Ocupa 100% da largura útil interna */
+    padding: 12px 16px; /* Preenchimento generoso conforme instruído */
+    border: 1.5px solid #dcdcdc; /* Borda cinza suave e de espessura firme */
+    border-radius: 8px; /* Arredondamento exato de 8px conforme requisitos */
+    font-family: inherit; /* Herda a mesma fonte do pai (Inter) */
+    font-size: 0.95rem; /* Tamanho confortável para digitação */
+    color: #1a1a1a; /* Texto digitado na cor padrão */
+    background-color: #fafafa; /* Fundo cinza bem clarinho nos campos */
+    transition: all 0.2s ease; /* Transições suaves de borda e cor ao focar */
+    outline: none; /* Desativa a borda de outline padrão do navegador */
+} /* Termina os estilos comuns de campos */
+
+.form-group input:focus, /* Estilo de foco nos inputs */
+.form-group textarea:focus { /* Estilo de foco no textarea */
+    border-color: #2a7ae2; /* Borda assume a cor azul de destaque no foco */
+    background-color: #ffffff; /* Fundo limpo puramente branco no foco */
+    box-shadow: 0 0 0 3px rgba(42, 122, 226, 0.15); /* Efeito suave de luz ao redor */
+} /* Termina estilos de foco de campos */
+
+.btn-submit { /* Botão de ação de submissão do formulário */
+    width: 100%; /* Largura total cobrindo toda a base do formulário */
+    padding: 14px; /* Preenchimento confortável para clique em dispositivos móveis */
+    background-color: #2a7ae2; /* Cor sólida de destaque azul oficial da paleta */
+    color: #ffffff; /* Letra branca para alto contraste */
+    border: none; /* Remove bordas industriais padrão */
+    border-radius: 8px; /* Arredondamento de 8px alinhado com o design dos inputs */
+    font-family: inherit; /* Herda fonte padrão */
+    font-size: 1rem; /* Fonte bem legível */
+    font-weight: 600; /* Peso de fonte bem marcado */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.2s ease; /* Transição de cor de fundo super suave */
+    margin-top: 10px; /* Cria margem superior para se afastar dos campos */
+} /* Termina estilos da classe btn-submit */
+
+.btn-submit:hover { /* Hover de transição suave do botão de submissão */
+    background-color: #1e63c7; /* Escurece suavemente o azul no hover */
+} /* Termina estilos de hover do botão */
+
+.alert { /* Caixa de alertas para feedbacks pós-operação */
+    padding: 14px 16px; /* Preenchimento interno confortável */
+    border-radius: 8px; /* Bordas arredondadas acompanhando o padrão */
+    font-size: 0.9rem; /* Tamanho de texto compacto */
+    font-weight: 500; /* Peso semi-médio */
+    margin-bottom: 24px; /* Espaço abaixo da caixa de alerta */
+    display: block; /* Garante visibilidade em bloco por padrão */
+} /* Termina estilos da classe alert */
+
+.alert.hidden { /* Classe para esconder a caixa de alertas da tela */
+    display: none; /* Oculta totalmente o elemento */
+} /* Termina estilos da classe hidden */
+
+.alert.success { /* Estilo específico para alertas de sucesso */
+    background-color: #e3f9e5; /* Fundo verde bem suave e harmonioso */
+    color: #1f7a2a; /* Texto verde floresta escuro para contraste */
+    border: 1px solid #c2ebd0; /* Borda verde bem discreta */
+} /* Termina estilos de sucesso da caixa de alertas */
+
+.alert.error { /* Estilo específico para alertas de erro/falha */
+    background-color: #ffeef0; /* Fundo vermelho bem claro e sutil */
+    color: #d62436; /* Texto avermelhado escuro para excelente contraste */
+    border: 1px solid #fecdd3; /* Borda vermelha discreta */
+} /* Termina estilos de erro da caixa de alertas */

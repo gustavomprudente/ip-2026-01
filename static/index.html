@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Início do documento HTML definindo o idioma como Português do Brasil -->
+<head> <!-- Seção de cabeçalho contendo metadados e links externos -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suporte a acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define viewport para garantir responsividade em dispositivos móveis -->
+    <title>Hospital Teste — Sistema de Gestão de Pacientes</title> <!-- Título do sistema exibido na aba do navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão ao domínio de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pré-conexão de segurança cruzada para fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- Importação da fonte moderna Inter -->
+    <link rel="stylesheet" href="/static/styles/index.style.css"> <!-- Link para a folha de estilo específica da página inicial -->
+</head> <!-- Fim do cabeçalho da página -->
+<body> <!-- Início do corpo visual da página -->
+    <div class="app-container"> <!-- Div de agrupamento principal do layout -->
+        <header class="header"> <!-- Seção de cabeçalho visual da página -->
+            <div class="logo">🏥 Hospital Teste</div> <!-- Logotipo com ícone de hospital e nome do sistema -->
+            <p class="subtitle">Sistema Completo para Gerenciamento e Controle de Pacientes</p> <!-- Subtítulo explicativo -->
+        </header> <!-- Fim do cabeçalho visual -->
+
+        <main class="grid-container"> <!-- Área principal configurada em grid para exibir os cards das operações -->
+            <a href="/static/forms/createPatient.html" class="card"> <!-- Card/link que aponta para o formulário de cadastro -->
+                <div class="card-icon blue">➕</div> <!-- Ícone representativo de adição com estilo azul -->
+                <h3>Cadastrar Paciente</h3> <!-- Título da ação de cadastro -->
+                <p>Inserir novos pacientes com dados cadastrais e diagnóstico inicial no sistema.</p> <!-- Descrição da ação de cadastro -->
+            </a> <!-- Fim do card de cadastro -->
+
+            <a href="/static/forms/getPatient.html" class="card"> <!-- Card/link que aponta para a busca de paciente -->
+                <div class="card-icon blue">🔍</div> <!-- Ícone de pesquisa azul -->
+                <h3>Buscar Paciente</h3> <!-- Título da ação de busca -->
+                <p>Localizar detalhes, diagnósticos e informações de contato usando o CPF.</p> <!-- Descrição da ação de busca -->
+            </a> <!-- Fim do card de busca -->
+
+            <a href="/static/forms/updatePatient.html" class="card"> <!-- Card/link que aponta para a atualização de paciente -->
+                <div class="card-icon blue">✏️</div> <!-- Ícone de lápis de edição azul -->
+                <h3>Atualizar Dados</h3> <!-- Título da ação de atualização -->
+                <p>Modificar o nome, telefone ou histórico de diagnóstico de pacientes existentes.</p> <!-- Descrição da ação de atualização -->
+            </a> <!-- Fim do card de atualização -->
+
+            <a href="/static/forms/deletePatient.html" class="card"> <!-- Card/link que aponta para a remoção de paciente -->
+                <div class="card-icon blue">❌</div> <!-- Ícone de exclusão vermelho/azul -->
+                <h3>Remover Paciente</h3> <!-- Título da ação de exclusão -->
+                <p>Deletar permanentemente o registro de um paciente do sistema de saúde.</p> <!-- Descrição da ação de exclusão -->
+            </a> <!-- Fim do card de exclusão -->
+        </main> <!-- Fim da área dos cards -->
+
+        <footer class="footer"> <!-- Rodapé do sistema -->
+            <p>&copy; 2026 Hospital Teste. Todos os direitos reservados. Projeto Modelo CRUD em GoLang.</p> <!-- Texto de direitos autorais -->
+        </footer> <!-- Fim do rodapé -->
+    </div> <!-- Fim do container principal -->
+</body> <!-- Fim do corpo visual -->
+</html> <!-- Fim do documento HTML -->

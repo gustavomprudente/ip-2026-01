@@ -1,0 +1,98 @@
+* { /* Seletor universal para reiniciar estilos padrões */
+    margin: 0; /* Remove margens externas padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos internos padrão de todos os elementos */
+    box-sizing: border-box; /* Define o cálculo do tamanho com base na borda */
+} /* Fecha o seletor universal */
+
+body { /* Estilização global do corpo da página */
+    font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif; /* Define a fonte padrão com alternativas de sistema */
+    background-color: #f5f5f5; /* Cor de fundo cinza bem clara conforme paleta */
+    color: #1a1a1a; /* Cor padrão do texto principal quase preto */
+    display: flex; /* Utiliza layout flexbox para posicionar os elementos principais */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo principal */
+    align-items: center; /* Centraliza verticalmente o conteúdo na viewport */
+    min-height: 100vh; /* Define a altura mínima do corpo para preencher toda a tela */
+    line-height: 1.6; /* Define espaçamento ideal de entrelinhas para melhor leitura */
+} /* Fecha estilos do body */
+
+.app-container { /* Bloco wrapper que engloba toda a página */
+    width: 100%; /* Permite ocupar a largura inteira disponível */
+    max-width: 1000px; /* Limita a largura máxima da interface para melhor design */
+    padding: 40px 20px; /* Adiciona preenchimento interno nas laterais e topo/base */
+    display: flex; /* Define modelo de layout flexbox para organização vertical */
+    flex-direction: column; /* Alinha o conteúdo interno em uma coluna vertical */
+    gap: 40px; /* Adiciona espaçamento vertical consistente entre os blocos filhos */
+} /* Fecha estilos do app-container */
+
+.header { /* Estilização da seção do topo (título e subtítulo) */
+    text-align: center; /* Centraliza horizontalmente todo o texto do cabeçalho */
+} /* Fecha estilos do header */
+
+.logo { /* Estilização do título/logotipo do Hospital Teste */
+    font-size: 2.5rem; /* Define um tamanho de fonte de destaque para a marca */
+    font-weight: 700; /* Define peso de fonte em negrito extra forte */
+    color: #2a7ae2; /* Aplica a cor de destaque azul oficial da paleta */
+    margin-bottom: 10px; /* Cria margem inferior para afastar o subtítulo */
+    letter-spacing: -1px; /* Ajusta o espaçamento de caracteres para um visual moderno */
+} /* Fecha estilos do logo */
+
+.subtitle { /* Estilização do subtítulo descritivo */
+    font-size: 1.1rem; /* Define tamanho médio e elegante para a fonte */
+    color: #666666; /* Usa cor cinza suave para diferenciar do texto principal */
+    font-weight: 400; /* Define peso de fonte normal padrão */
+} /* Fecha estilos do subtitle */
+
+.grid-container { /* Layout grid de 2x2 para exibição dos cards de controle */
+    display: grid; /* Ativa o sistema de layout grid do CSS */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Configura colunas flexíveis e responsivas */
+    gap: 24px; /* Adiciona espaçamento uniforme entre os cards do grid */
+} /* Para de definir estilos do grid-container */
+
+.card { /* Estilização dos cards de atalho das operações do CRUD */
+    background-color: #ffffff; /* Fundo totalmente branco para destacar sobre o fundo cinza */
+    border: 1px solid #e0e0e0; /* Borda bem sutil e suave cinza claro */
+    border-radius: 12px; /* Bordas arredondadas modernas e elegantes */
+    padding: 30px 24px; /* Preenchimento generoso no interior do card */
+    text-decoration: none; /* Remove o sublinhado padrão dos links do card */
+    color: #1a1a1a; /* Mantém a cor do texto do card no padrão principal */
+    transition: all 0.3s ease; /* Configura animação suave para transições de estado */
+    display: flex; /* Define flexbox para empilhar conteúdo interno do card */
+    flex-direction: column; /* Alinha os elementos internos do card em coluna */
+    align-items: flex-start; /* Alinha o conteúdo interno na esquerda */
+} /* Termina estilos da classe card */
+
+.card:hover { /* Estilos que ocorrem ao passar o mouse sobre o card */
+    transform: translateY(-5px); /* Efeito micro-animado de flutuação suave para cima */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Aplica sombra suave indicando elevação */
+    border-color: #2a7ae2; /* Destaca a borda do card na cor azul do sistema */
+} /* Fecha evento hover do card */
+
+.card-icon { /* Estilo da área circular que abriga o emoji nos cards */
+    font-size: 1.8rem; /* Define o tamanho do emoji */
+    width: 50px; /* Define largura fixa da área circular */
+    height: 50px; /* Define altura fixa da área circular */
+    border-radius: 10px; /* Arredonda ligeiramente os cantos do bloco do ícone */
+    background-color: rgba(42, 122, 226, 0.1); /* Define fundo azul transparente elegante */
+    display: flex; /* Permite centralizar o ícone interno */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    margin-bottom: 20px; /* Cria espaçamento inferior para afastar o título */
+} /* Termina estilos da classe card-icon */
+
+.card h3 { /* Estilo para o título interno do card */
+    font-size: 1.25rem; /* Tamanho da fonte do título */
+    font-weight: 600; /* Peso de fonte semi-negrito */
+    margin-bottom: 10px; /* Afasta o título do parágrafo explicativo */
+} /* Termina estilos do título h3 dentro do card */
+
+.card p { /* Estilo para o texto explicativo do card */
+    font-size: 0.95rem; /* Tamanho de fonte reduzido para hierarquia visual */
+    color: #666666; /* Cor cinza mais suave para descrição do card */
+} /* Termina estilos do parágrafo dentro do card */
+
+.footer { /* Estilização da seção inferior do rodapé */
+    text-align: center; /* Centraliza o texto de copyright */
+    font-size: 0.85rem; /* Define tamanho de fonte reduzido e sutil */
+    color: #888888; /* Usa cor cinza clara para discrição */
+    margin-top: 20px; /* Distancia a área do rodapé do grid superior */
+} /* Termina estilos da classe footer */

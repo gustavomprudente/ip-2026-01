@@ -1,0 +1,11 @@
+# Ignorar arquivos de ambiente sensíveis
+.env
+
+# Ignorar binários compilados do Go
+hospital-teste
+hospital-teste.exe
+
+# Ignorar pastas temporárias ou de cache do sistema
+.DS_Store
+.idea/
+.vscode/

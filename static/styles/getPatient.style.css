@@ -1,0 +1,172 @@
+* { /* Seletor universal para reiniciar estilos padrões */
+    margin: 0; /* Remove margens externas padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos internos padrão de todos os elementos */
+    box-sizing: border-box; /* Define o cálculo do tamanho com base na borda */
+} /* Fecha o seletor universal */
+
+body { /* Estilização global do corpo da página */
+    font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif; /* Define a fonte padrão com alternativas de sistema */
+    background-color: #f5f5f5; /* Cor de fundo cinza bem clara conforme paleta */
+    color: #1a1a1a; /* Cor padrão do texto principal quase preto */
+    display: flex; /* Utiliza layout flexbox para posicionar os elementos principais */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo principal */
+    align-items: center; /* Centraliza verticalmente o conteúdo na viewport */
+    min-height: 100vh; /* Define a altura mínima do corpo para preencher toda a tela */
+    padding: 20px; /* Preenchimento nas bordas da página para telas pequenas */
+} /* Fecha estilos do body */
+
+.form-container, /* Bloco que limita a largura do formulário de busca centralizado */
+.container { /* Bloco wrapper usado na página de resultado de busca */
+    width: 100%; /* Permite ocupar a largura máxima disponível */
+    max-width: 480px; /* Limita a largura máxima a 480px conforme regras de design */
+    background-color: #ffffff; /* Fundo totalmente branco para destacar sobre o fundo cinza */
+    border: 1px solid #e0e0e0; /* Borda bem sutil e suave cinza claro */
+    border-radius: 12px; /* Bordas arredondadas modernas e elegantes */
+    padding: 40px 30px; /* Preenchimento interno generoso no card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Aplica sombra sutil ao redor do card */
+} /* Fecha estilos para form-container e container */
+
+.back-link { /* Estilização do link de voltar para home */
+    display: inline-block; /* Define display block inline para permitir espaçamento */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: #666666; /* Cor cinza neutro e sutil para o link */
+    font-size: 0.9rem; /* Fonte ligeiramente reduzida para manter discrição */
+    font-weight: 500; /* Peso de fonte semi-médio */
+    margin-bottom: 24px; /* Espaço vertical abaixo do link para afastar o título */
+    transition: color 0.2s ease; /* Transição suave de mudança de cor */
+} /* Fecha estilos do back-link */
+
+.back-link:hover { /* Estilo do link de voltar ao passar o mouse */
+    color: #2a7ae2; /* Muda a cor para o azul de destaque oficial */
+} /* Fecha hover do back-link */
+
+h2, /* Título principal do formulário */
+h1 { /* Título principal do resultado de busca */
+    font-size: 1.6rem; /* Tamanho confortável para destaque de títulos */
+    font-weight: 700; /* Título bem marcado em negrito */
+    color: #1a1a1a; /* Cor padrão escura da paleta */
+    margin-bottom: 8px; /* Espaço vertical abaixo do título */
+} /* Fecha estilos de títulos h2 e h1 */
+
+.form-subtitle { /* Estilização do subtítulo informativo */
+    font-size: 0.9rem; /* Fonte pequena */
+    color: #666666; /* Cor cinza suave discreta */
+    margin-bottom: 24px; /* Espaço abaixo do subtítulo */
+} /* Fecha estilos de subtitle */
+
+.form-group { /* Agrupador estrutural de rótulo e input */
+    margin-bottom: 20px; /* Espaço vertical que separa as linhas de formulário */
+    display: flex; /* Permite organizar filhos verticalmente com facilidade */
+    flex-direction: column; /* Alinha o rótulo acima do campo digitável */
+    gap: 8px; /* Espaçamento de 8px entre a label e o input correspondente */
+} /* Termina estilos de form-group */
+
+.form-group label { /* Estilização do rótulo do campo de busca */
+    font-size: 0.9rem; /* Tamanho ideal e legível */
+    font-weight: 600; /* Peso semi-negrito para rápida identificação visual */
+    color: #333333; /* Cor escura levemente atenuada */
+} /* Termina estilos de form-group label */
+
+.form-group input { /* Estilização específica do campo de digitação de CPF */
+    width: 100%; /* Ocupa toda a largura interna disponível do card */
+    padding: 12px 16px; /* Preenchimento interno generoso conforme manual do usuário */
+    border: 1.5px solid #dcdcdc; /* Borda cinza suave */
+    border-radius: 8px; /* Arredondamento exato de 8px */
+    font-family: inherit; /* Herda a fonte padrão do corpo da página */
+    font-size: 0.95rem; /* Tamanho legível e confortável */
+    color: #1a1a1a; /* Cor padrão do texto digitado */
+    background-color: #fafafa; /* Fundo cinza bem claro */
+    transition: all 0.2s ease; /* Transições suaves no foco */
+    outline: none; /* Desativa a borda padrão do browser */
+} /* Termina estilos de form-group input */
+
+.form-group input:focus { /* Estilo de foco do campo de digitação */
+    border-color: #2a7ae2; /* Borda assume a cor azul de destaque no foco */
+    background-color: #ffffff; /* Fundo limpo puramente branco no foco */
+    box-shadow: 0 0 0 3px rgba(42, 122, 226, 0.15); /* Efeito suave de luz ao redor */
+} /* Termina estilos de foco do input */
+
+.btn-submit, /* Botão de ação de submissão do formulário */
+.btn-back { /* Botão de retorno na página de resultados */
+    display: block; /* Garante comportamento em bloco completo */
+    text-align: center; /* Centraliza o texto do botão/link */
+    text-decoration: none; /* Remove sublinhado padrão se for link */
+    width: 100%; /* Largura total cobrindo a base do card */
+    padding: 14px; /* Preenchimento confortável para clique fácil */
+    background-color: #2a7ae2; /* Cor sólida de destaque azul oficial da paleta */
+    color: #ffffff; /* Letra branca para alto contraste */
+    border: none; /* Remove bordas industriais padrão */
+    border-radius: 8px; /* Arredondamento de 8px */
+    font-family: inherit; /* Herda fonte padrão */
+    font-size: 1rem; /* Fonte legível e de bom tamanho */
+    font-weight: 600; /* Peso de fonte marcado */
+    cursor: pointer; /* Cursor de mão apontando */
+    transition: background-color 0.2s ease; /* Transição de cor de fundo super suave */
+    margin-top: 10px; /* Cria margem superior */
+} /* Termina estilos de btn-submit e btn-back */
+
+.btn-submit:hover, /* Hover do botão de busca */
+.btn-back:hover { /* Hover do botão de voltar da busca */
+    background-color: #1e63c7; /* Escurece suavemente o azul no hover */
+} /* Termina estilos de hover nos botões */
+
+.alert { /* Caixa de alertas para feedbacks pós-operação */
+    padding: 14px 16px; /* Preenchimento interno confortável */
+    border-radius: 8px; /* Bordas arredondadas acompanhando o padrão */
+    font-size: 0.9rem; /* Tamanho de texto compacto */
+    font-weight: 500; /* Peso semi-médio */
+    margin-bottom: 24px; /* Espaço abaixo da caixa de alerta */
+    display: block; /* Garante visibilidade em bloco por padrão */
+} /* Termina estilos de alert */
+
+.alert.hidden { /* Classe para esconder a caixa de alertas da tela */
+    display: none; /* Oculta totalmente o elemento */
+} /* Termina estilos de alert hidden */
+
+.alert.error { /* Estilo específico para alertas de erro/falha */
+    background-color: #ffeef0; /* Fundo vermelho bem claro e sutil */
+    color: #d62436; /* Texto avermelhado escuro para excelente contraste */
+    border: 1px solid #fecdd3; /* Borda vermelha discreta */
+} /* Termina estilos de alert error */
+
+/* ESTILOS ESPECÍFICOS DO CARD DE RESULTADO DA BUSCA */
+
+.result-card { /* Card com os dados do paciente retornado */
+    background-color: #fafafa; /* Fundo cinza bem suave para o bloco de dados */
+    border: 1px solid #e0e0e0; /* Borda suave separadora */
+    border-radius: 8px; /* Bordas arredondadas padrão */
+    padding: 24px; /* Espaçamento interno acolhedor */
+    margin-bottom: 24px; /* Espaço abaixo do card de resultado */
+    display: flex; /* Define modelo flexbox vertical */
+    flex-direction: column; /* Alinha os campos em coluna */
+    gap: 16px; /* Espaço uniforme entre as linhas de dados do paciente */
+} /* Termina estilos da classe result-card */
+
+.field { /* Linha individual contendo rótulo e valor na ficha */
+    display: flex; /* Define flexbox horizontal */
+    justify-content: space-between; /* Distribui rótulo à esquerda e valor à direita */
+    border-bottom: 1px dashed #e8e8e8; /* Divisor pontilhado suave entre os campos */
+    padding-bottom: 8px; /* Espaço acima do divisor pontilhado */
+} /* Termina estilos da classe field */
+
+.field:last-child { /* Seletor especial para a última linha da ficha de dados */
+    border-bottom: none; /* Remove divisor pontilhado do último campo */
+    padding-bottom: 0; /* Remove padding inferior do último campo */
+} /* Termina estilos do último field */
+
+.field .label { /* Rótulo descritivo do campo no resultado */
+    font-size: 0.85rem; /* Fonte reduzida para descrição */
+    font-weight: 600; /* Peso de fonte bem visível */
+    color: #666666; /* Cinza médio de apoio */
+    text-transform: uppercase; /* Coloca rótulos em letras maiúsculas */
+    letter-spacing: 0.5px; /* Espaçamento fino de letras */
+} /* Termina estilos da label no resultado */
+
+.field .value { /* Valor obtido do paciente no banco de dados */
+    font-size: 0.95rem; /* Tamanho confortável para leitura */
+    font-weight: 500; /* Peso médio de fonte */
+    color: #1a1a1a; /* Cor padrão escura para facilitar leitura */
+    max-width: 60%; /* Limita a largura para evitar quebras estranhas */
+    text-align: right; /* Alinha o texto do valor para a direita */
+    word-break: break-word; /* Quebra palavras muito longas de forma segura */
+} /* Termina estilos de value no resultado */
